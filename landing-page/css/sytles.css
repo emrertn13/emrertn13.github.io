@@ -1,0 +1,356 @@
+/***** css reset *****/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* adding background to the html */
+html{
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../images/bg-image/scooter.svg) no-repeat center;
+    /*** THE LINE ABOVE IS TO SET THE BACKGROUND IMAGE ***/
+    background-size: 40%;
+}
+
+
+/* setting width to the main  */
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* re-sizing the logo */
+.logo img{
+    display: block;
+    width: 7%;
+    position: relative;
+}
+
+/* fixing the first section */
+div{
+    display: block;
+}
+div.site-expl{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+}
+h1{
+    margin: 0;
+    font-size: 5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1rem;
+}
+
+
+/* fixing the main form */
+div.form{
+    width: 25%;
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+.form form{
+    /*** TO GIVE ELEMENTS A COLUMN LAYOUT ***/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+}
+div.form h2, div.form h3{
+    width: fit-content;
+}
+div.form h2{
+    margin-top: 0;
+}
+form input{
+    margin-bottom: 20%;
+    width: 100%;
+}
+input.checkBox{
+    width: auto;
+    display: inline-block;
+}
+div.form-expl{
+    display: flex;
+}
+.form-expl p{
+    margin: 0.5%;
+}
+
+
+/* fixing of the footer */
+footer{
+    width: 100%;
+}
+
+
+/* fixing left side of the footer */
+div.footer-expl{
+    /*** TO GIVE ELEMENTS A COLUMN LAYOUT ***/
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+footer h3,
+footer p{
+    margin: 0;
+}
+footer p{
+    margin-bottom: 2%;
+}
+.footer-expl form{
+    /*** TO GIVE SPACE BETWEEN EACH ELEMEMT ***/
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 80%;
+    justify-content: space-between;
+}
+.footer-expl form label{
+    /* margin: 0.2%; */
+    box-sizing: border-box;
+}
+.footer-expl form button{
+    width: 12rem;
+    max-height: 1.5rem;
+    vertical-align: center;
+}
+
+
+/* fixing right side of the footer */
+div.social-icon{
+    /*** TO GIVE SPACE BETWEEN EACH ELEMEMT ***/
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* to create the site layout */
+section.mid-section{
+    /*** TO GIVE SPACE BETWEEN EACH ELEMEMT ***/
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    /*** TO GIVE SPACE BETWEEN EACH ELEMEMT ***/
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    margin: 2rem;
+}
+
+
+/* actual styling */
+/* form */
+div.form{
+    background-color: #fff;
+    border: 1px solid #333131;
+    border-radius: 5%;
+    box-shadow: rgba(00, 00, 00, 0.1) 1rem 1rem;
+}
+div.form input{
+    background-color: #F4F4F5;
+    border: none;
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+div.form button{
+    background-color: #57EEAB;
+    border: none;
+    padding: 3%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+div.form a{
+    color: #FF8480;
+}
+/* footer */
+footer{
+    margin-top: 4rem;
+    background-color: #FFFD8C;
+}
+footer form button{
+    background-color: #FF8480;
+    border: none;
+    border-radius: 5%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    color: #fff;
+    font-weight: bold;
+    align-content: center;
+}
+footer form input{
+    padding: 3%;
+}
+
+
+/* my layout was breaking so i had to add @medias */
+/* Firat Break */
+@media screen and (max-width: 960px){
+    /* logo sizing  */
+    .logo img{
+        width: 10%;
+    }
+
+    /* first section & main form */
+    section.mid-section{
+        /*** TO CHANGE THE LAYOUT FROM ROW TO COLUMN ***/
+        flex-direction: column;
+        margin-top: 0;
+    }
+    div.site-expl{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+    }
+    .mid-section .form{
+        width: 65%;
+        margin: 0 auto;
+    } 
+
+    /* footer itself */
+    footer{
+        /*** TO CHANGE THE LAYOUT FROM ROW TO COLUMN ***/
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer form section */
+    div.footer-expl{
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        align-content: center;
+    }
+    .footer-expl form{
+        width: 110%;
+    }
+    .footer-expl form input{
+        width: 85%;
+    }
+
+    /* footer icon section */
+    div.social-icon{
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}
+/* Second Break */
+@media screen and (max-width: 600px){
+    /* logo sizing  */
+    .logo img{
+        width: 20%;
+    }
+
+    /* first section & main form */
+    section.mid-section{
+        /*** TO CHANGE THE LAYOUT FROM ROW TO COLUMN ***/
+        flex-direction: column;
+        margin-top: 0;
+    }
+    div.site-expl{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+    }
+    div.site-expl h1{
+        font-size: 3rem;
+    }
+    .mid-section .form{
+        width: 85%;
+        margin: 0 auto;
+    } 
+
+    /* footer itself */
+    footer{
+        /*** TO CHANGE THE LAYOUT FROM ROW TO COLUMN ***/
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer form section */
+    div.footer-expl{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        align-content: center;
+    }
+    .footer-expl form{
+        width: 90%;
+    }
+    .footer-expl form input{
+        width: 130%;
+        height: 50%;
+    }
+    .footer-expl form{
+        /*** TO WRAP THE ELEMENTS WHEN DISPLAY SIZE CHANGES ***/
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        max-height: 50%;
+    }
+    .footer-expl form button{
+        flex-grow: 2;
+        margin: 0 auto;
+    }
+    /* footer icon section */
+    div.social-icon{
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}

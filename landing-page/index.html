@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page Assignment</title>
+    <link rel="stylesheet" href="css/sytles.css">
+</head>
+<body>
+    <main class="page-main">
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="page-icon">
+        </div>
+        <section class="mid-section"> <!-- MAIN CONTENT -->  
+            <div class="site-expl">
+                <H1>
+                    Want to be your own boss?
+                </H1>
+                <h3>
+                    Start today and make up to $30/hr driving your own vehicle with Dash! <br>
+                    <!-- Safe. Secure. Reliable.  -->
+                </h3>
+            </div>
+            <div class="form">
+                <h2>
+                    Apply Now
+                </h2>
+                <h3>
+                    Enter your info below to get started.
+                </h3>
+                <form action="">
+                    <label for="f-name">
+                        <input type="text"
+                        id="f-name"
+                        name="f-name"
+                        placeholder="First name"/>
+                    </label>
+
+                    <label for="l-name">
+                        <input type="text"
+                        id="l-name"
+                        name="l-name"
+                        placeholder="Last name"/>
+                    </label>
+
+                    <label for="e-mail">
+                        <input type="text"
+                        id="e-mail"
+                        name="e-mail"
+                        placeholder="Email address"/>
+                    </label>
+
+                    <label for="phone-no">
+                        <input type="text"
+                        id="phone-no"
+                        name="phone-no"
+                        placeholder="Phone number"/>
+                    </label>
+
+                    <div class="check-box">
+                        <!-- I PUT THESE ELEMENTS INSIDE A DIV BECAUSE, IN THE FIRST PLACE I COULD NOT FIGURE OUT HOW TO PUT THE TEXT AND THE CHECK BOX INLINE -->
+                        <label for="checkbox"> 
+                        <input class="checkBox" type="checkbox"
+                        id="checkbox"
+                        name="checkbox"/>
+                        I agree to dash terms</label>
+                        <!-- <h3>I agree to dash terms</h3> -->
+                    </div>
+                        
+                    <button type="submit">
+                        DRIVE WITH US
+                    </button>
+                    
+                    <div class="form-expl">
+                        <p>
+                            Already applied?
+                        </p>
+                        <a href="#">
+                            Check your application status here
+                        </a>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+        <footer>
+            <div class="footer-expl">
+                <h3>
+                    See how much you can earn with Dash.
+                </h3>
+                <p>
+                    how many hours do you want to drive with us this week?
+                </p>
+                <form action="">
+                    <label for="hours">
+                        <input type="text"
+                        id="hours"
+                        name="hours"
+                        placeholder="Hours"/>
+                    </label>
+
+                    <label for="city">
+                        <input class="form-city" type="text"
+                        id="city"
+                        name="city"
+                        placeholder="City">
+                    </label>
+
+                    <button type="submit">
+                        CALCULATE
+                    </button>
+                </form>
+            </div>
+            
+            
+            <div class="social-icon">
+                <!-- THESE ELEMENTS ARE INSIDE A DIV IN ORDER TO CONVERT THEM INTO FLEX ITEMS  -->
+                <img src="../landing-page/images/icons/instagram.svg" alt="insta-icon">
+                <img src="../landing-page/images/icons/twitter.svg" alt="twit-icon">
+                <img src="../landing-page/images/icons/facebook.svg" alt="face-icon">
+                <img src="../landing-page/images/icons/linkedin.svg" alt="link-icon">
+            </div>
+        </footer>
+</body>
+</html>
