@@ -1,0 +1,1067 @@
+/***I TRIED IMPROVING THE LAYOUT I PROVIDED***/
+
+/* in order to reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my default styles */
+h1{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h3{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4{
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+li{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: circle;
+}
+figure{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #ffffff;
+}
+legend{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #ffffff;
+}
+a{
+    color: #ff0033;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: #ff0033 underline;
+}
+a:active{
+    color: #ffffff;
+    text-decoration: #ff0033 overline;
+}
+button{
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ff0033;
+    border: 1px #ffffff solid;
+}
+button:hover{
+    color: #ff0033;
+    background-color: white;
+    border: 1px #000 solid;
+}
+img{
+    border: 5px #ff0033 solid;
+    box-sizing: border-box;
+}
+.banner-section img{
+    border: none;
+}
+/* actual styling */
+.back-ground{
+    display: block;
+    width: 100%;
+    background: url(IMGS/Flames2.0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*** this single line of code above this comment is used to make the bg image stay in the same position while scrolling ***/
+    /*** the code is from URL:https://www.w3schools.com/cssref/pr_background-attachment.asp ***/
+    z-index: 1;
+}
+/* creating the banner? */
+.banner{
+    display: block;
+    width: 100%;
+    height: 550px;
+    /*** to add the background imade ***/
+    background: url(IMGS/Flames-2.3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+    /* buiding the grid */
+    .banner-section{
+        display: grid;
+        width: 85%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1.5fr 1.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1.5fr;
+    }
+    .banner-section h4{
+        color: darkgrey;
+    }
+    /* first i have to build the nav */
+    .site-nav{
+        display: flex;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .siteNav{
+        width: 100%;
+        padding-top: 5%;
+        color: #ffffff;
+        background-color: #ff0033;
+        text-align: center;
+        vertical-align: middle;
+        /*** I could not figure out how to align the text still, I tried using vertical-align property but it did not worked ***/
+        /*** so I achieved this by giving a padding, since my layout crashes in tablet mode, i had to fix anyway ***/
+    }
+    .siteNav p{
+        display: block;
+    }
+    .siteNav:hover{
+        color: #ff0033;
+        text-decoration: underline;
+        background-color: #ffffff;
+    }   
+    .siteNav:active{
+        color: #ff0033;
+        text-decoration: overline;
+        background-color: #ffffff;
+    }
+    .clicked-on{
+        color: #ff0000;
+        text-decoration: overline;
+        background-color: #ffffff;
+    }
+    /* now placing each elemnt into the grid */
+    .site-logo{
+        grid-column: 1/2;
+        grid-row: 2/4;
+        align-self: center;
+    }
+    .banner h4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .site-nav{
+        width: 100%;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .banner h1{
+        grid-column: 1/4;
+        grid-row: 5/6;
+        align-self: center;
+        justify-self: center;
+        background-color: rgba(00, 00, 00, 0.05)
+    }
+.site-logo{
+    width: 70%;
+    /* position: relative;
+    top: 3rem;
+    left: 11rem; 
+    *** it did not work out as i planned ***/
+}
+
+/**//* creating section  Desktop layout - Home *//**/
+.allfor-bg{
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-gap: 3rem;
+}
+    /* first i have to build the sections */
+        /* big section */
+        .big{
+            display: block;
+            margin-top: 4.5rem;
+            background-color: black;
+        }
+        .big h3{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+        }
+        .big h4{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+        .big .animation1-boxes{
+            display: grid;
+            width: 90%;
+            margin: 0 auto;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 5%;
+            margin-bottom: 1.5rem;
+        }
+        .big .content1{
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .big .box-holder{
+            display: flex;
+            flex-direction: column;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-content: space-between;
+        }
+        .big .boxes{
+            height: 5%;
+            background-color: #ff0033;
+        }
+        .big p{
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            color: white;
+        }
+        .big ol{
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+            /* big section animation */
+            /***Below this comment I made keyframes for my .animation1-boxes, I made a perfect wave with changing colors and rotation***/
+            @keyframes box-wave{
+                0%, 100%{
+                    background-color: #ff0033;
+                    transform-origin: 0;
+                }
+                20%, 80%{
+                    background-color: #990000;
+                }
+                40%, 60%{
+                    background-color: #4D0000; 
+                }
+                50%{
+                    background-color: black; 
+                    transform: rotateY(90deg);
+                }
+            }
+            .boxes {
+                animation-name: box-wave;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+              }
+              .boxes:nth-child(1){
+                animation-delay: 0.2s;
+              }
+              .boxes:nth-child(2){
+                animation-delay: 0.4s;
+              }
+              .boxes:nth-child(3){
+                animation-delay: 0.6s;
+              }
+              .boxes:nth-child(4){
+                animation-delay: 0.8s;
+              }
+              .boxes:nth-child(5){
+                animation-delay: 1s;
+              }
+              .boxes:nth-child(6){
+                animation-delay: 1.2s;
+              }
+              .boxes:nth-child(7){
+                animation-delay: 1.4s;
+              }
+              .boxes:nth-child(8){
+                animation-delay: 1.6s;
+              }
+              .boxes:nth-child(9){
+                animation-delay: 1.8s;
+              }
+              .boxes:nth-child(10){
+                animation-delay: 2s;
+              }
+        /* small section(s) */
+        .small1,
+        .small2{
+            display: block;
+            color: #ffffff;
+            background-color: black;
+        }
+        .small1{
+            margin-top: 4.5rem;
+        }
+        .small1 h3{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .for-slides{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        .small1 .slides{
+            width: 45%;
+            margin: 0 auto;
+        }
+        .small1 button{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        .small2{
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        .small2 .find-us{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .find-us h3{
+            margin-bottom: 2rem;
+        }
+        .find-us h4{
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .find-us p{
+            margin-bottom: 1rem;
+        }
+        .small2 .social-icon,
+        .small2 .social-icon2,
+        .small2 .social-icon3{
+            display: flex;
+            width: fit-content;
+            flex-direction: column;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .social-icon img,
+        .social-icon2 img,
+        .social-icon3 img{
+            display: block;
+            width: fit-content;
+            margin: 1%;
+            margin-right: 1.5rem;
+            padding: 1rem;
+            box-sizing: border-box;
+            background-color: #ff0033;
+            border: 1px rgba(255, 255, 255, 1) solid;
+        }
+        .social-icon img:hover,
+        .social-icon2 img:hover,
+        .social-icon3 img:hover{
+            background-color: #fff;
+            border: 1px #000 solid;
+        }
+        /* footer section */
+        .footer{
+            display: block;
+            color: #ffffff;
+            background-color: black;
+        }
+        .footer-content{
+            display: flex;
+            flex-direction: column;
+            margin-top: 4.5rem;
+        }
+        .footer-content p{
+            display: block;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer-content .footer-social{
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+        .footer-social a{
+            padding: 0.5rem;
+        }
+        .footer-content h4{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.1rem;
+        }
+        .copy-right{
+            margin: 0 auto;
+            margin-bottom: 4.5rem;
+        }
+/* putting each section into the grid */
+.big{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.small1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.small2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/**//* creating section  Desktop layout - About *//**/
+.big .about-pic{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.small1 .pics{
+    display: grid;
+    margin: 1.5rem;
+    margin-bottom: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+}
+.pics .pic-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.pics .pic-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.pics .pic-1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.pics .pic-4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.pics img{
+    width: 100%;
+}
+.big .about-pic{
+    margin-top: 1.5rem;
+}
+.big .about-p1{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.big .about-p2{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.big .form{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr;
+    grid-template-areas: 
+    "design-h design-h"
+    "design-p design-p"
+    "form-s exp-s";
+}
+.big .form h3{
+    margin-left: 0;
+    margin-bottom: 1rem;
+    grid-area: design-h;
+    color: #ffffff;
+}
+.big .form h4{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    grid-area: design-p;
+}
+.big .form form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    grid-area: form-s;
+}
+form input,
+.img-accept{
+    width: 100%;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #ff0033;
+    border: 1px #000 solid;
+}
+::placeholder{
+    color: #ffffff;
+    opacity: 0.8;
+  }
+/* :-ms-input-placeholder{
+    color: red;
+}
+::-ms-input-placeholder{
+color: red;
+} */
+/*** this line of code above is to change the placeholder color ***/
+/*** the code is from URL:https://www.w3schools.com/howto/howto_css_placeholder.asp ***/
+.big .form .form-expl{
+    grid-area: exp-s;
+}
+.form-expl button{
+    width: 100%;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+.form-expl p{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+.form-expl a{
+    display: block;
+    text-align: center;
+}
+
+/**//* creating section  Desktop layout - Blog *//**/
+.comment-pic-div{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ff0033;
+}
+.comment-pic1{
+    width: 45%;
+    margin-bottom: 1.5rem;
+}
+.comment-pic2{
+    width: 45%;
+    margin-bottom: 1.5rem;
+}
+.did-like{
+    display: grid;
+    width: 100%;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    color: #ffffff;
+}
+.did-like h3{
+    margin: 0;
+    margin-bottom: 2rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.did-like #chk-yes{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.did-like #chk-no{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.did-like input{
+    width: fit-content;
+    margin: 0;
+}
+.comment-section .did-like label{
+    font-size: 1.5rem;
+}
+.comment-section{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(6, 0.3fr);
+}
+.comment-section input{
+    width: fit-content;
+    margin: 0;
+}
+.comment-section label{
+    display: inline-block;
+    font-size: 1rem;
+}
+    /* placing each checkbox into the grid */
+    .did-like{
+        grid-column: 1/2;
+        grid-column: 1/3;
+    }
+    /**column**/
+    .good-design,
+    .good-visual,
+    .good-color,
+    .good-font,
+    .good-graf{
+        grid-column: 1/2;
+    }
+    .not-appeal-design,
+    .not-appeal-visual,
+    .bad-color,
+    .bad-font,
+    .more-graf{
+        grid-column: 2/3;
+    }
+    /**row**/
+    .good-design,
+    .not-appeal-design{
+        grid-row: 2/3;
+    }
+    .good-visual,
+    .not-appeal-visual{
+        grid-row: 3/4;
+    }
+    .good-color,
+    .bad-color{
+        grid-row: 4/5;
+    }
+    .good-font,
+    .bad-font{
+    grid-row: 5/6;
+    }
+    .good-graf,
+    .more-graf{
+        grid-row: 6/7;
+    }
+    .less-graf{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .button-submit{
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 7/8;
+        box-sizing: border-box;
+    }
+.small1 .upload-rules-ol{
+    width: 85%;
+    margin: 0 auto;
+}
+.small1 .upload-alert{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+.upload-section{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+.upload-section h3{
+    margin-bottom: 2rem;
+}
+.submit-now,
+.submit-now2{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px #fff solid;
+}
+#text-here{
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px #fff solid;
+}
+.upload-section input{
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px #fff solid;
+}
+.img-accept{
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px #fff solid;
+}
+.upload-section ::placeholder{
+    width: 100%;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.social-icon2{
+    justify-content: space-between;
+}
+
+/**//* creating section  Desktop layout - Product *//**/
+.big .product-cardholder,
+.small1 .product-cardholder{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.shop-now,
+.shop-now2{
+    display: inline-block;
+    width: 49.5%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    box-sizing: border-box;
+}
+.cardholder{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.small1 .cardholder{
+    margin-top: 0;
+}
+.product-cardholder img{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px #ff0033 solid;
+}
+.product-cardholder{
+    width: fit-content;
+    margin-top: 1.5rem;
+}
+.product-cardholder p{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.cards{
+    display: grid;
+    width: 47%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.cards .card1-img1,
+.cards .card2-img1,
+.cards .card3-img1,
+.cards .card4-img1{
+	grid-column: 1;
+	grid-row: 1/3 span;
+}
+.cards .card1-img2,
+.cards .card2-img2,
+.cards .card3-img2,
+.cards .card4-img2{
+	grid-column: 1;
+	grid-row: 2/4 span;
+}
+.cards .card1-img1:hover,
+.cards .card2-img1:hover,
+.cards .card3-img1:hover,
+.cards .card4-img1:hover{
+	z-index: 1;
+}
+
+.small2 .small2-layout{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.why-are-we h3{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.why-are-we img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    border: 5px #ff0033 solid;
+}
+.social-icon3{
+    justify-content: space-between;
+}
+
+
+/*Styling for different displays*/
+    @media screen and (max-width: 960px){
+        section.allfor-bg-flex{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.5fr 0.2fr;
+        }
+        .allfor-bg .big{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .allfor-bg .small1{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .allfor-bg .small2{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        /* .big{
+            margin-top: 0;
+        } */
+        /***I ended up changing the banner height so I could take this code out now.***/
+        .small1{
+            margin-top: 0;
+        }
+        .product-cardholder button{
+            margin-bottom: 1.5rem;
+        }
+        .cardholder p{
+            margin-bottom: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 777px){
+        .banner{
+            height: 350px;
+        }
+        .banner-section{
+            grid-gap: 5%;
+        }
+        .site-nav{
+            flex-direction: column;
+            grid-row: 3/5;
+        }
+        .site-logo{
+            display: block;
+            margin-left: auto;
+            /***This line of code above this comment is used inorder to align the logo right inside the grid***/
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .small2 .find-us{
+            margin-left: 1.5rem;
+        }
+        .social-icon img,
+        .social-icon2 img,
+        .social-icon3 img{
+            margin-left: 1.5rem;
+        }
+        .footer-text{
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width: 666px){
+        .site-nav{
+            flex-direction: column;
+            grid-row: 3/5;
+        }
+        .site-logo{
+            display: block;
+            margin-left: auto;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h3{
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: bolder;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h4{
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p{
+            font-size: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        li{
+            margin-bottom: 0.7rem;
+            font-size: 1rem;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            list-style: circle;
+        }
+        figure{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.7rem;
+            color: #ffffff;
+        }
+        label{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.7rem;
+            color: #ffffff;
+        }
+        legend{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.7rem;
+            color: #ffffff;
+        }
+        a{
+            padding-bottom: 0.2rem;
+            font-size: 0.7rem;
+            color: #ff0033;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #ffffff;
+            text-decoration: #ff0033 underline;
+        }
+        a:active{
+            color: #ffffff;
+            text-decoration: #ff0033 overline;
+        }
+        button{
+            padding: 1rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            font-size: 1rem;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #ff0033;
+            border: 1px #ffffff solid;
+        }
+        button:hover{
+            color: #ff0033;
+            background-color: white;
+            border: 1px #000 solid;
+        }
+        .submit-now,
+        .submit-now2{
+            font-size: 1rem;
+        }
+    }
+    @media screen and (max-width: 555px){
+        /***Banner section***/
+        .banner{
+            height: 250px;
+        }
+        .banner h1{
+            margin-bottom: 1.5rem;
+        }
+        /***Blog Page***/
+            /***Content sections***/
+            .comment-section{
+                display: flex;
+                flex-direction: column;
+            }
+            .comment-section label{
+                margin-bottom: 0.5rem;
+            }
+            .button-submit{
+                margin-top: 1.5rem;
+            }
+            /***Footer section***/
+            .footer-text{
+                width: 85%;
+                text-align: center;
+            }
+        /***Products Page***/
+            /***Content sections***/
+            .shop-now{
+                width: 100%;
+                margin: 0 auto;
+            }
+            .shop-now2{
+                display: none;
+            }
+            .social-icon img,
+            .social-icon2 img,
+            .social-icon3 img{
+                margin-right: 1.5rem;
+            }
+    }
+    @media screen and (max-width: 444px){
+        .banner{
+            height: 200px;
+        }
+        .site-nav p{
+            font-size: 0.8rem;
+        }
+    }

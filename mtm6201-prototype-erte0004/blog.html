@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mid-Term</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <div class="banner-section">
+            <img src="IMGS/HardBuda.svg" alt="site-logo" class="site-logo">
+            <nav class="site-nav">
+                <a href="index.html" class="site-nav1 siteNav"><p><!-- <br> -->H0me</p></a>
+                <a href="about.html" class="site-nav2 siteNav"><!-- <br> -->Ab00t</a>
+                <a href="products.html" class="site-nav3 siteNav"><!-- <br> -->Pr0ducts</a>
+                <a href="blog.html" class="site-nav4 siteNav clicked-on"><!-- <br> -->Bl00g</a>
+                <!-- ***I couldn't figure out how to vertically align the text so I tried sending the text down one row***  -->
+                <!-- but this is not responsive -->
+            </nav>
+        </div>
+    </header>
+    <section class="back-ground">
+        <section class="allfor-bg allfor-bg-flex">
+        <section class="big">
+            <div class="comment-pic-div">
+            <img src="Cloth/Remake/4EvrHardCore2.0.jpg" alt="you-may-comment-to-this" class="comment-pic1">
+            <img src="Cloth/Remake/HotNCold.jpg" alt="you-may-comment-to-this" class="comment-pic1">
+            <figure>4EvrHrd*Core</figure>
+            <figure>Hot'N'Cold</figure>
+            </div>
+            <form action="#" class="comment-section">
+                <div class="did-like">
+                    <h3>Is This Duo Good?</h3> 
+
+                    <label for="yes">Sure
+                    <input type="radio" 
+                        name="yes" 
+                        id="yes" 
+                        value="yes" 
+                        checked/>
+                    </label>
+
+                    <label for="no">Not Really
+                    <input type="radio" 
+                        name="no" 
+                        id="no" 
+                        value="no"/>
+                    </label>
+                </div>
+                <!-- <h4 class="what-like">Whats Did You Like About It</h4> -->
+                <label for="good-design">I find the design good.
+                    <input type="checkbox" 
+                    name="good-design" 
+                    id="good-design"/>
+                </label>
+                <label for="good-visual">Visuals fit perfect.
+                    <input type="checkbox" 
+                    name="good-visual" 
+                    id="good-visual"/>
+                </label>
+                <label for="good-color">Perfect color match.
+                    <input type="checkbox" 
+                    name="good-color" 
+                    id="good-color"/>
+                </label>
+                <label for="good-font">Perfect font match.
+                    <input type="checkbox" 
+                    name="good-font" 
+                    id="good-font"/>
+                </label>
+                <label for="good-graf">Graphics work together perfect.
+                    <input type="checkbox" 
+                    name="good-graf" 
+                    id="good-graf"/>
+                </label>
+
+                <!-- <h4 class="what-notlike">Whats Did You Dislike About It</h4> -->
+                <label for="not-appeal-design">The design is not appealing.
+                    <input type="checkbox" 
+                    name="not-appeal-design" 
+                    id="not-appeal-design"/>
+                </label>
+                <label for="not-appeal-visual">Visual is not appealing.
+                    <input type="checkbox" 
+                    name="not-appeal-visual" 
+                    id="not-appeal-visual"/>
+                </label>
+                <label for="bad-color">Bad color choice.
+                <input type="checkbox" 
+                    name="bad-color" 
+                    id="bad-color"/>
+                </label>
+                <label for="bad-font">Bad font choice.
+                <input type="checkbox" 
+                    name="bad-font" 
+                    id="bad-font"/>
+                </label>
+                <label for="more-graf">It needs more graphics.
+                    <input type="checkbox" 
+                    name="more-graf" 
+                    id="more-graf"/>
+                </label>
+                <label for="less-graf">There is too much going on.
+                    <input type="checkbox" 
+                    name="less-graf" 
+                    id="less-graf"/>
+                </label>
+                <button class="button-submit" type="submit">
+                    SUBM!T
+                </button>
+            </form>
+        </section>
+        <section class="small1">
+            <div class="upload-rule">
+                <h3 class="upload-rules-h">
+                    Rules U Must Obey;
+                </h3>
+                <ol class="upload-rules-ol">
+                    <li>Do not make unrelated uploads, comments, and posts.</li>
+                    <li>Do not make uncensored uploads, comments, and posts.</li>
+                    <li>Do not make offensive uploads, comments, and posts.</li>
+                    <li>Word offensive contains any direct verbal assault, racial slur, religious discrimination or any other types of discrimination (contains ageism).</li>
+                </ol>
+                <p class="upload-alert">
+                    Anyone who still prefers to make an upload, a comment or a post against the rules will be held responsible for it.
+                </p>
+            </div>
+        </section>
+        <section class="small2">
+            <form action="#" class="upload-section">
+                <h3>Upload Now</h3>
+                <label for="img">
+                    <input type="file"
+                     id="img"
+                     name="img"
+                     accept="image/*"
+                     class="img-accept"/>
+                </label>
+                <button type="submit"
+                class="submit-now">SUBM!T N0W</button>
+                <!-- ***this line form code is used to make an area that user can upload a file and submit*** -->
+                <!-- *** the code is from URL:https://www.w3schools.com/tags/att_input_accept.asp *** -->
+                <div>
+                    <input type="text"
+                     name="text-here"
+                     id="text-here"
+                     placeholder="Add Comment Here"/>
+                </div>
+                <button type="submit"
+                class="submit-now2">SUBM!T N0W</button>
+            </form>
+            <div class="social-icon2">
+                <img src="IMGS/icons/instagram.svg" alt="insta-icon">
+                <img src="IMGS/icons/twitter.svg" alt="twit-icon">
+                <img src="IMGS/icons/facebook.svg" alt="face-icon">
+                <img src="IMGS/icons/linkedin.svg" alt="link-icon">
+            </div>
+        </section>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+            <p class="footer-text">
+                Please let us know of any comment/opinion you have. ***we'll for sure care about it.
+            </p>
+            <h4>
+                0ur Social Presence
+            </h4>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/">Instagram</a>
+                <p>*</p>
+                <a href="https://twitter.com/">Twitter</a>
+                <p>*</p>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <p>*</p>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+            <a href="index.html" class="copy-right">&copy; hrd*core . til'bone2020</a>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
