@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar
+    navbar-expand-sm
+    bg-dark
+    navbar-dark
+    fixed-top">
+        <a href="#" class="navbar-brand">Bootstrap</a>
+        <button class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto">
+                <a href="#aboutSection" class="nav-link">About</a>
+                <a href="#exapmleSection" class="nav-link">e.g. Use</a>
+                <a href="#resouresSection" class="nav-link">Resources</a>
+            </div>
+        </div>
+    </nav>
+    <a name="aboutSection"></a>
+    <section class="container-fluid bg-secondary mt-3">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-center"> 
+                <div class="col-12 col-md-7 container-fluid">
+                    <div class="row justify-content-left">
+                        <h1 class="col-12 display-3 text-light">
+                            Bootstrap
+                        </h1>
+                        <p class="col-12 text-light">Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.</p>
+                        <p class="col-12 text-light">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                        <button class="btn col-6 offset-1 col-md-5 btn-light btn-outline-primary">Visit Site</button>
+                    </div>
+                </div>
+                <img src="IMGS/bootstrap-icon2.0.svg" class="col-12 col-md-4" alt="bootstrap-icon">
+            </div>
+            <br>
+            <br>
+            <br>
+    </section>
+
+    <a name="exapmleSection"></a>
+    <section class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="text-styling col-12 col-sm-6 offser-lg-1 col-lg-5">
+                <div class="row justify-content-center">
+                    <h2 class="display-4 p-0 col-11">Text Styling</h2>
+                    <h3 class="h3 p-0 col-11 font-weight-normal">Text Color</h3>
+                    <p class="col-11 mt-2"><u>Text 1 - Defaul Text:</u> Lorem, quo eaque necessitatibus nihil ad tempore beatae amet?</p>
+                    <p class="col-11">Defaul text color, no additional class.</p>
+                    <p class="col-11 mt-2 text-primary"><u>Text 2 - Blue Text:</u> Lorem, quo eaque necessitatibus nihil ad tempore beatae amet?</p>
+                    <p class="col-11">Blue text color. Add the class .text-primary to the element.</p>
+                    <p class="col-11 mt-2 alert alert-primary"><u>Text 3 - Alert Text:</u> Lorem, quo eaque necessitatibus nihil ad tempore beatae amet?</p>
+                    <p class="col-11">Alert text & backgroun color. Add the class .alert .alert-primary to the element.</p>
+                    <h3 class="col-11 mt-2 font-weight-normal">Text Background Color</h3>
+                    <p class="col-11 mt-2"><u>Text 1 - Defaul Text Background:</u> Lorem, quo eaque necessitatibus nihil ad tempore beatae amet?</p>
+                    <p class="col-11">Defaul background color, no additional class.</p>
+                    <p class="col-11 mt-2 bg-primary text-light"><u>Text 2 - Blue Text Background 1:</u> Lorem, quo eaque necessitatibus nihil ad tempore beatae amet?</p>
+                    <p class="col-11">Blue text background color. Add the classes .bg-primary & .text-light to the element.</p>
+                    <p class="col-11 mt-2 bg-primary text-dark"><u>Text 1 - Blue Text Background 2:</u> Lorem, quo eaque necessitatibus nihil ad tempore beatae amet?</p>
+                    <p class="col-11">Blue text background color. Add the classes .bg-primary & .text-dark to the element.</p>
+                </div>
+            </div>
+            <div class="button-styling container-fluid col-12 col-sm-6 col-lg-6 m-0 mb-5">
+                <div class="row justify-content-center">
+                    <h2 class="display-4 p-0 col-11">Button Styling</h2>
+                    <h3 class="h3 p-0 col-11 font-weight-normal">Button Text Color</h3>
+                    <button class="col-11 pt-2 pb-2 mt-3">E.G.Button 1 - Text Defaul</button>
+                    <p class="col-11 mt-2">Default button text. To make the element a button we add the class .btn.</p>
+                    <button class="col-11 pt-2 pb-2 mt-3 btn btn-light text-primary">E.G.Button 2 - Text Blue</button>
+                    <p class="col-11 mt-2">To change text color of the button into a blue we add the class .text-primary.</p>
+                    <button class="col-11 pt-2 pb-2 mt-3 btn btn-outline-primary">E.G.Button 3 - Text & Outline</button>
+                    <p class="col-11 mt-2">To change the text color & the outline of the button into a blue we add the class .outline-primary.</p>
+                    <h3 class="h3 p-0 mt-5 col-11 font-weight-normal">Button Background color</h3>
+                    <button class="col-11 pt-2 pb-2 mt-3">E.G.Button 1 - Background Defaul</button>
+                    <p class="col-11 mt-2">Default button background. To make the element a button we add the class .btn.</p>
+                    <button class="col-11 pt-2 pb-2 mt-3 btn btn-primary">E.G.Button 2 - Background Blue</button>
+                    <p class="col-11 mt-2">To change background color of the button into a blue we add the class .btn-bg-primary.</p>
+                    <button class="col-11 pt-2 pb-2 mt-3 btn alert-primary">E.G.Button 3 - Background Area Blue</button>
+                    <p class="col-11 mt-2">To change background area color of the button into a blue we add the class .alert-primary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="resouresSection"></a>
+    <section class="container-fluid mt-4 pt-5 bg-secondary">
+        <div class="row justify-content-center">
+            <div class=" col-12 col-md-4 mb-5">
+                <H2 class="display-4 text-light text-center">Resources</H2>
+                    <div class="navbar-nav">
+                    <a href="https://imdac.github.io/" class="nav-link text-light font-italic text-center">IMDAC GitHub Site</a>
+                    <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" class="nav-link text-light font-italic text-center">Bootstrap Documentation</a>
+                    <a href="https://getbootstrap.com/docs/4.4/utilities/colors/" class="nav-link text-light font-italic text-center">Bootstrap Color Utilities</a>
+                    <a href="https://getbootstrap.com/docs/4.4/utilities/spacing/" class="nav-link text-light font-italic text-center">Bootstrap Spacing Utilities</a>
+                    <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="nav-link text-light font-italic text-center">Bootstrap 4 Essential Training</a>
+                    </div>
+            </div>
+            <picture class=" col-12 col-md-7 mb-5">
+                <!-- landscape to Square Image -->
+                <source srcset="IMGS/bootstrap-pc.png 480w,
+                    IMGS/bootstrap-pc.png 960w,
+                    IMGS/bootstrap-pc2.0.png 1440w,
+                    IMGS/bootstrap-pc2.0.png 1920w" 
+                media="(max-width: 959px)"/>
+                <img src="IMGS/bootstrap-pc.png" class="w-100" alt="bootstrap-code">
+            </picture>
+        </div>
+    </section>
+
+    <footer class="bg-dark pt-5 pb-4">
+        <p class="text-light text-center m-0">&copy;Emir Erten 2020</p>
+        <p class="text-light text-center">Bootstrap Info Site</p>
+    </footer>
+</body>
+</html>
