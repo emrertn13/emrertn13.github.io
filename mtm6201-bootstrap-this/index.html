@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Info</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- line above is to link the bootstrap library -->
 </head>
 <body>
+    <!-- NAV BAR -->
+    <!-- The code & the knowledge in this nav bar below is coming from the codepen participation assignmendt we did. -->
+    <!-- The nav bar is responsive, it also collapses. -->
     <nav class="navbar
     navbar-expand-sm
     bg-dark
@@ -27,6 +31,10 @@
             </div>
         </div>
     </nav>
+
+    <!-- ABOUT SECTION -->
+    <!-- I created a grid for this section. In small viewports each div will take the whole width of the screen, on the larger devices it will be something like the golden ratio. -->
+    <!-- Single breakpoint (md) was enough for what I wanted to achieve. -->
     <a name="aboutSection"></a>
     <section class="container-fluid bg-secondary mt-3">
             <br>
@@ -51,6 +59,9 @@
             <br>
     </section>
 
+    <!-- EXAMPLES SECTION -->
+    <!-- I created a grid for this section. In small viewports each div will take the whole width of the screen, on the tablet mode the layout shrinks to a 50 - 50 column, and on the largest devices it will be something like the golden ratio. -->
+    <!-- I used multiple breakpoint for this layout. One for the tablet (sm) & one for the desktop (lg) -->
     <a name="exapmleSection"></a>
     <section class="container-fluid mt-5">
         <div class="row justify-content-center">
@@ -95,6 +106,10 @@
         </div>
     </section>
 
+    <!-- RESOURCES SECTION -->
+    <!-- I created a grid for this section. In small viewports each div will take the whole width of the screen, on the larger devices it will be something like the golden ratio. -->
+    <!-- I used multiple breakpoint for this layout. One for the tablet (sm) & one for the desktop (lg) -->
+    <!-- For this section I also used the picture element and sourceset to call different images in different screen sizes, just two images. Landscape one for larger displays and a square one for the smaller ones. -->
     <a name="resouresSection"></a>
     <section class="container-fluid mt-4 pt-5 bg-secondary">
         <div class="row justify-content-center">
@@ -120,6 +135,8 @@
         </div>
     </section>
 
+    <!-- FOOTER SECTION -->
+    <!-- Nothing fency happened here. -->
     <footer class="bg-dark pt-5 pb-4">
         <p class="text-light text-center m-0">&copy;Emir Erten 2020</p>
         <p class="text-light text-center">Bootstrap Info Site</p>
