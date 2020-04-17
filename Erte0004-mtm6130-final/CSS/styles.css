@@ -1,0 +1,827 @@
+/***********************
+       CSS RESET
+***********************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***********************
+  MOBIL DEFULT - HOME
+***********************/
+body{
+    background-color: #000;
+}
+.header-top{
+    background-color: #fff;
+}
+.body{
+    margin-top: 2rem;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    background-color: #014023;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    /* max-width: 35rem; */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+p,
+h3{
+    font-size: 0.75rem;
+ }
+ h1 {
+    color: white;
+    font-size: 1.6rem;
+ }
+ h2 {
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    background-color: #00CC66;
+    font-size: 1.125rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+ }
+.Header{
+    /* margin: 0 auto; */
+    background-color: rgb(46, 0, 46);
+    color: white;
+}
+.banner{
+    width: 100%;
+}
+
+
+.header-top{
+    display: block;
+    padding-bottom: 10px;
+}
+.sign-log{
+    position: absolute;
+    top: 0.5rem;
+    right: 0px;
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "Sign DIcon Log";
+}
+.sign{
+    width: 100%;
+    text-align: center;
+    grid-area: Sign;
+    font-size: 10px;
+}
+.log{
+    width: 100%;
+    text-align: center;
+    grid-area: Log;
+    font-size: 10px;
+}
+.im-sign-in{
+    width: 100%;
+    text-align: center;
+    grid-area: DIcon;
+}
+
+
+nav{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Home"
+    "About"
+    "Contact";
+    position: relative;
+}
+.home-menu{
+    width: 100%;
+}
+.im-menu{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 1rem;
+}
+.home{
+    width: 100%;
+    grid-area: Home;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(124, 0, 0);
+}
+.about{
+    width: 100%;
+    grid-area: About;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(124, 0, 0);
+}
+.contact{
+    width: 100%;
+    grid-area: Contact;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.join:hover{
+    color: #014023;
+}
+.join{
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+}
+nav a{
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+
+.topSports{
+    width: 100%;
+}
+.six-products{
+    width: 100%;
+    padding-bottom: 0.5rem;
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.3fr 0.1fr 1fr 0.3fr 0.1fr 1fr 0.3fr 0.1fr 1fr 0.3fr 0.1fr 1fr 0.3fr 0.1fr 1fr 0.3fr 0.1fr ;
+    grid-template-areas:
+    "picNHL"
+    "btnNHL"
+    "txtNHL"
+    "picSoc"
+    "btnSoc"
+    "txtSoc"
+    "picNBA"
+    "btnNBA"
+    "txtNBA"
+    "picNFL"
+    "btnNFL"
+    "txtNFL"
+    "picTns"
+    "btnTns"
+    "txtTns"
+    "picVol"
+    "btnVol"
+    "txtVol"
+}
+/*NHL*/
+.pic-NHL{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: picNHL;
+}
+.btn-NHL{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    grid-area: btnNHL;
+}
+.txt-NHL{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: txtNHL;
+    text-align: center;
+}
+/*SOCCER*/
+.pic-Soc{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: picSoc;
+}
+.btn-Soc{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    grid-area: btnSoc;
+}
+.txt-Soc{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: txtSoc;
+    text-align: center;
+}
+/*NBA*/
+.pic-NBA{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: picNBA;
+}
+.btn-NBA{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    grid-area: btnNBA;
+}
+.txt-NBA{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: txtNBA;
+    text-align: center;
+}
+/*NFL*/
+.pic-NFL{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: picNFL;
+}
+.btn-NFL{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    grid-area: btnNFL;
+}
+.txt-NFL{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: txtNFL;
+    text-align: center;
+}
+/*TENIS*/
+.pic-Tns{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: picTns;
+}
+.btn-Tns{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    grid-area: btnTns;
+}
+.txt-Tns{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: txtTns;
+    text-align: center;
+}
+/*VOLLEYBALL*/
+.pic-Vol{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: picVol;
+}
+.btn-Vol{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    grid-area: btnVol;
+}
+.txt-Vol{
+    width: 100%;
+    margin: 0 auto;
+    grid-area: txtVol;
+    text-align: center;
+}
+
+
+sup{
+    vertical-align: super;
+    font-size: smaller;
+}
+
+
+footer{
+    text-align: center;
+    padding: 3rem;
+}
+
+/***********************
+  MOBIL DEFULT - MATCHS
+***********************/
+caption{
+    box-sizing: border-box;
+    border: 1px solid rgb(124, 0, 0);
+}
+table{
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(124, 0, 0);
+}
+th,
+td{
+    box-sizing: border-box;
+    border: 1px solid rgb(124, 0, 0);
+    padding: 10px 20px;
+}
+th,
+tfoot{
+    background-color: #014023;
+}
+tbody{
+    background-color: darkolivegreen;
+}
+th{
+    /* font-weight: bold; */
+    color: #fff;
+}
+tfoot{
+    box-sizing: border-box;
+    font-size: .75rem;
+}
+td,
+th{
+    text-align: center;
+}
+
+
+.match-ticket{
+    background-color: blue;
+    display: block;
+    width: 100%;
+    background-color: #014023;
+}
+.match{
+    color: #fff;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgb(124, 0, 0);
+}
+.one{
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "Home evntText Away";
+    border-top: 1px solid rgb(124, 0, 0);
+}
+.match-one-pic-one{
+    margin: 15px 0px 15px 0px;
+    grid-area: Home;
+}
+.match-one-pic-two{
+    margin: 15px 0px 15px 0px;
+    grid-area: Away;
+}
+.match-one-txt{
+    grid-area: evntText;
+    text-align: center;
+    margin: 40px;
+}
+.two{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "Home2 evntText2 Away2";
+}
+.match-two-pic-one{
+    margin: 15px 0px 15px 0px;
+    grid-area: Home2;
+}
+.match-two-pic-two{
+    margin: 15px 0px 15px 0px;
+    grid-area: Away2;
+}
+.match-two-txt{
+    grid-area: evntText2;
+    text-align: center;
+    margin: 40px;
+}
+
+.aboutImg{
+    display: block;
+    margin-bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+.pici{
+    max-height: 400px;
+    max-width: 600px;
+    display: block;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.paragraph{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #025930;
+    margin: 0rem;
+    margin-top: 0;
+}
+p{
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 0;
+}
+
+/***********************
+ MOBIL DEFULT - CONTACT
+***********************/
+.htmlForms{
+    box-sizing: border-box;
+    background-color: #014023;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+textarea,
+input{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(124, 0, 0);
+    background: none;
+    padding: 10px;
+}
+label{
+    color: #fff; 
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+textarea:focus,
+input:focus{
+    outline-color: rgb(255, 124, 0);
+    border: 1px solid rgb(124, 0, 0);
+}
+input[type="radio"]+div{
+    border: 1px solid rgb(124, 0, 0);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%; 
+    vertical-align: middle;
+}
+input[type="radio"]:checked+div{
+    background-color:  darkolivegreen;
+}
+input[type="radio"] {
+    display: none;
+}
+
+
+.radioBtn{
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.radioTxt{
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.maps{
+    background-color: blueviolet;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+iframe{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    display: block;
+    box-sizing: border-box;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+/***********************
+ MOBIL DEFULT - STYLING
+***********************/
+.siteLogo{
+    margin: 0.5rem 0rem 0rem 1rem;
+    max-width: 200px;
+}
+i .im:hover{
+    color: #014023;
+}
+
+.im-arrow-up-circle{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #014023;
+    z-index: 666;
+}
+.im-arrow-up-circle:hover{
+    background-color: #00210C;
+    color: #fff;
+}
+.btnTop i:before{
+    font-size: 3rem;
+}
+
+td:hover,
+.match:hover{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    background-color: rgb(197, 255, 197);
+}
+
+body, header, section, footer, table, form{
+    background-color: #014023;
+}
+nav{
+    background-color: #018030;
+}
+.active{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    opacity: 50%;
+    background-color: #00210C;
+    color: #fff;
+}
+.on:hover{
+    background-color: #03FF5F;
+    color: #014023;
+}
+
+h2, .maps{
+    background-color: #025930;
+}
+
+.btn{
+    max-width: 200px;
+}
+button{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    display: block;
+    background-color:#018030 ;
+    padding: 10px 20px;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    cursor: progress;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+button:hover{
+    color: #014023;
+    background-color: #03FF5F;
+}
+
+/***********************
+      TABLET VIEW
+***********************/
+
+@media screen and (min-width: 768px){
+    body{
+        background: url(../IMG/backGround.gif) repeat left top;
+        background-size: cover;
+        background-size: 400px 300px;
+    }
+    .body{
+        max-width: 1000px;
+        margin-bottom: 2rem;
+    }
+    footer{
+        max-width: 1000px;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    }
+p,
+h3{
+    color: #fff;
+    font-size: 1rem;
+}
+h1{
+    color: white;
+    font-size: 1.6rem;
+}
+h2{
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    background-color: #025930;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #fff;
+}
+    .six-product{
+        display: grid;
+        padding-bottom: 0.5rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "top-left top-right"
+        "mid-left mid-right"
+        "bot-left bot-right";
+    }
+    .iceHockey{
+        grid-area: top-left; 
+    }
+    .soccerBall{
+        grid-area: top-right;
+    }
+    .basketBall{
+        grid-area: mid-left;
+    }
+    .footBall{
+        grid-area: mid-right;
+    }
+    .tenisBall{
+        grid-area: bot-left;
+    }
+    .volleyBall{
+        grid-area: bot-right;
+    }
+    .pici{
+        height: 300px;
+    }
+    nav{
+        display: flex;
+    }
+    .on{
+        border: 0;
+        flex: 1;
+    }
+    .home{
+        border-right: 1px solid rgb(124, 0, 0);
+    }
+    .about{
+        border-right: 1px solid rgb(124, 0, 0);
+    }
+    .image{
+        display: block;
+        margin: 0 auto; 
+    }
+    .gridAbout{
+        display: grid;
+        padding-bottom: 0.5rem;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "leftUpA rightA"
+        "bottomA bottomA";
+    }
+    .columnR{
+        display: block;
+        grid-area: rightA; 
+    }
+    .columnL1{
+        display: block;
+        grid-area: leftUpA;
+    }
+    .columnL2{
+        display: block;
+        grid-area: bottomA;
+    }
+    table{
+        /* display: inline-block; */
+        height: 100%;    
+    }
+    .currentMatch{
+        margin-top: 2rem;
+        /* height: 100%; */
+    }
+
+
+    .gridContact{
+        display: grid;
+        padding-bottom: 0.5rem;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "leftC rightC"
+    }
+    .htmlForms{
+        display: block;
+        grid-area: leftC; 
+    }
+    .maps{
+        display: block;
+        grid-area: rightC;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .body{
+        max-width: 75rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    body{
+        background: url(../IMG/backGround.gif) repeat left top;
+        background-size: cover;
+        background-size: 400px 300px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+footer{
+        max-width: 75rem;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.6);
+    }
+    .six-product{
+        display: grid;
+        padding-bottom: 0.5rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "top-left top-center top-right"
+        "bot-left bot-center bot-right";
+    }
+    .iceHockey{
+        grid-area: top-left; 
+    }
+    .soccerBall{
+        grid-area: top-center;
+    }
+    .basketBall{
+        grid-area: top-right;
+    }
+    .footBall{
+        grid-area: bot-left;
+    }
+    .tenisBall{
+        grid-area: bot-center;
+    }
+    .volleyBall{
+        grid-area: bot-right;
+    }
+    .pici{
+        height: 300px;
+    }
+    .gridAbout{
+        display: grid;
+        padding-bottom: 0.5rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "leftUpA rightA"
+        "leftDownA rightA";
+    }
+    .columnR{
+        display: block;
+        grid-area: rightA; 
+    }
+    .columnL1{
+        display: block;
+        grid-area: leftUpA;
+    }
+    .columnL2{
+        display: block;
+        grid-area: leftDownA;
+    }
+}

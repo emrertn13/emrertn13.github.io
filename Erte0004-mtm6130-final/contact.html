@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+	<link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+</head>
+<body>
+    <a href="#top" class="btnTop" title="top">
+        <i class="im im-arrow-up-circle"></i>
+    </a>
+    <div class="body">
+    <header class="header">
+    <div class="header-top">
+        <img class="siteLogo" src="IMG/LOGO.gif" alt="Logo of the company">
+        <div class="sign-log">
+            <a href="contact.html" class="sign join">
+                Sign In
+            </a>
+            <i class="im im-sign-in"></i>
+            <a href="home.html" class="log join">
+                Log In
+            </a>
+        </div>
+    </div>
+    <nav class="banner">
+        <i class="im im-menu"></i>
+        <a href="home.html" class="home on">Home</a>
+        <a href="about.html" class="about on">Games</a>
+        <a href="contact.html" class="active contact on">Contact</a>
+    </nav>
+    </header>
+    <div class="gridContact">
+        <section class="htmlForms">
+            <div class="contactForm">
+                <h2 class="contac-form">Please Fill In The Form To Sign Up</h2>
+            </div>
+            <form action="somePHPPage.php" method="GET" id="htmlForm">
+            <div>
+                <label for="firstName">First Name:</label> 
+                <input type="text" 
+                name="firstName" 
+                id="firstName" 
+                placeholder="James"
+                required
+                autofocus
+                />
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label> 
+                <input type="text"
+                name="lastName"
+                id="lastName"
+                required
+                placeholder="Bond"
+                />
+            </div>
+            <div>
+                <label for="pass">Password:</label> 
+                <input type="password"
+                name="pass"
+                id="pass"
+                required
+                />
+            </div>
+            <div>
+                <label for="em">Email: </label> 
+                <input type="email" 
+                name="em" 
+                id="em"
+                required
+                placeholder="xxxxxx@gmail.com"
+                />
+            </div>
+            <div>
+                <h3 class="radioTxt">Would you like to recieve E-mail about your favorite teams?</h3> 
+                <label class="radioBtn" for="yee">Yes.
+                <input type="radio" 
+                name="forms" 
+                id="yee" 
+                value="yes" 
+                checked
+                />
+                <div></div>
+                </label>
+                <label class="radioBtn" for="nah">No
+                <input type="radio" 
+                name="forms" 
+                id="nah" 
+                value="no"
+                />
+                <div></div>
+                </label>
+            </div>
+            <div>
+                <label for="summary">Summary: </label> 
+                <textarea name="summary" id="summary" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+            </form>
+        </section>
+        <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1668780.6950790354!2d25.53225455024273!3d38.005852204342204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd862a762cacd%3A0x628cbba1a59ce8fe!2zxLB6bWlyLCBUw7xya2l5ZQ!5e0!3m2!1str!2sca!4v1575932172416!5m2!1str!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <nav class="footer">
+        <a href="home.html" class="home on">Home</a>
+        <a href="about.html" class="about on">Games</a>
+        <a href="contact.html" class="active contact on">Contact</a>
+    </nav>
+    </div>
+    <footer>
+        <div>
+            <h4>&copy; Copyright by Emir Erten</h4>
+            <h5>Responsive Web Design Final Assignment</h5>
+            <h5>13<sup>th </sup>of December, 2019</h5>
+        </div>
+    </footer>
+</body>
+</html>
