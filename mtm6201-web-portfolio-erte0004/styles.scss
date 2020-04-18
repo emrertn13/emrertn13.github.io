@@ -1,0 +1,1052 @@
+//*** Variables
+$primary: #ff0033;
+$secondary: rgba(255, 0, 51, 0.5);
+
+//*** My deafault values 
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: $secondary;
+    font-size: 3rem;
+}
+h2{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+h3{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+h4{
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+a{
+    color: white;
+    text-decoration: underline;
+}
+a:hover,
+link:hover{
+    color: $primary;
+}
+.social-media-presence-icon img:hover{
+    color: $primary;
+}
+p, li{
+    color: white;
+}
+li{
+    list-style-type: square;
+}
+
+//*** My default sections
+.gnrl-sctn{
+    background-color: $secondary;
+    padding: 3%;
+}
+.gnrl-img{
+    border: $secondary solid;
+    width: 100%;
+}
+.banner, .banner2{
+    border: none;
+}
+.devision-line{
+    width: 60%;
+    height: 2px;
+    background-color: $primary;
+}
+
+/// Styling
+// / Home
+body{
+    background-color: black;
+}
+
+// Header
+.navbar-dark{
+    background-color: $primary;
+}
+.navbar-brand{
+    width: 10%;
+}
+.nav-link{
+    text-decoration: none;
+}
+.active{
+    text-decoration: overline;
+}
+
+// Main Setion
+.banner, .banner2{
+    @extend .gnrl-img;
+}
+
+.home-top-section{
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-gap: 2%;
+}
+.home-mini-about-div{
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.adobe-expertise{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.other-expertise{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+//*/*// To put the stripe on top of the image
+.img-explination{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.home-mini-about-img{
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+.about-explanation-holder{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.home-mini-about-text{
+    margin: 0;
+}
+.about-explanation p{
+    margin: 5%;
+}
+.about-explanation{
+    background-color: $secondary;
+}
+
+.devision-line{
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.home-bot-first{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2.1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2%;
+}
+.home-img-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.home-img-two{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.home-img-three{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.home-bot-second{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 2.1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2%;
+}
+.home-img-four{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.home-img-five{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.home-img-six{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.dual-devide .devision-line:nth-child(2){
+    width: 30%;
+}
+
+// Footer 
+.footer-organizor{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.footer-groups{
+    display: flex;
+    flex-direction: column;
+    z-index: 666;
+}
+.footer-organizor p{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.footer-organizor img{
+    grid-column: 1/6;
+    grid-row: 1/4;
+}
+.footer-organizor-first-group{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.footer-organizor-second-group{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.footer-organizor-third-group{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+// / About Page
+//*/*// To add the title on top
+.about-me{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4fr;
+}
+.about-title{
+    display: block;
+    margin: 0;
+    margin-top: auto;
+    align-self: baseline;
+    position: relative;
+    bottom: -14%;
+    left: 3%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.about-me-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 2%;
+}
+.mini-about-img{
+    margin: 0;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.about-img-explination{
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.about-text{
+    margin: 0;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.software-expertise{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.software-expertise img{
+    margin: 0;
+    width: 12%;
+}
+
+//*/*// To put the stripe on top of the image
+.about-img-explination{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.5fr 1fr;
+}
+.mini-about-img{
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+.about-img-explination .explanation-holder{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+// / Portfolio Page
+.move{
+    position: relative;
+    top: 8rem;
+}
+
+.projets{
+    width: 70%;
+    margin: 0 auto;
+}
+
+//*/*// To add the title on top
+.project-section-a0,
+.project-section-e0{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4fr;
+}
+.project-section-e0{
+    margin: 0 auto;
+}
+.project-section-a0 h1,
+.project-section-e0 h1{
+    display: block;
+    margin: 0;
+    margin-top: auto;
+    align-self: baseline;
+    position: relative;
+    bottom: -18%;
+    left: 3%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.second-project-sec h1{
+    bottom: -19%;
+    left: 3%;
+}
+.third-project-sec h1{
+    bottom: -20%;
+    left: 3%;
+}
+.fourth-project-sec h1{
+    bottom: -19%;
+    left: 3%;
+}
+.fifth-project-sec h1{
+    bottom: -23%;
+    left: 3%;
+}
+.sixth-project-sec h1{
+    bottom: -22%;
+    left: 3%;
+}
+.seventh-project-sec h1{
+    bottom: -20%;
+    left: 3%;
+}
+
+//*/*// To add the elements into grids
+.ject-sec-one, 
+.ject-sec-two{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-gap: 2%;
+}
+.ject-one,
+.ject-two{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.p1-i2,
+.p2-i2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.p1-i3,
+.p2-i3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.ject-sec-five{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 0.5fr;
+    grid-row: 1fr 0.2fr;
+    grid-gap: 2%;
+}
+.p5-i1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.p5-i2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.p5-i3{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.p5-l{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.ject-sec-three, 
+.ject-sec-four,
+.ject-sec-six,
+.ject-sec-seven{
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.5fr 0.3fr;
+    grid-row: 1fr 0.2fr;
+    grid-gap: 2%;
+}
+
+.p3-i1,
+.p4-i1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.p3-i2,
+.p4-i2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.p3-i3,
+.p4-i3{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.p3-i4,
+.p4-i4{
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.p3-l,
+.p4-l{
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+.p6-i1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.p6-i2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.p6-i3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.p6-i4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.p6-l{
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+.p7-i1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.p7-i2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.p7-i3{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.p7-i4{
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.p7-l{
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+// /Contact Page
+//*/*// To add the title on top
+.contact-me{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4fr;
+}
+.contact-title{
+    display: block;
+    margin: 0;
+    margin-top: auto;
+    align-self: baseline;
+    position: relative;
+    bottom: -22%;
+    left: 3%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.social-media-presence-icon{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    box-sizing: border-box;
+}
+.social-media-presence-icon img{
+    margin: 0;
+    width: 100%;
+    border: 1px solid $secondary;
+    box-sizing: border-box;
+}
+.contact-grid{
+    display: grid;
+    grid-column: 2fr 0.5fr;
+    grid-row: 1fr 1fr;
+    grid-gap: 2%;
+}
+.contact-grid img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.contact-one{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.contact-one h3{
+    margin-bottom: 0;
+}
+.links,
+.email{
+    margin-top: 10%;
+}
+.contact-one p{
+    margin-bottom: 0;
+}
+.social-media-presence-contact{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+/// Break Points
+// /For Tablet
+@media screen and (max-width: 960px){
+    //*** Editting My deafault values to the viewport
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.7rem;
+    }
+    a{
+        font-size: 0.7rem;
+    }
+    p, li{
+        font-size: 0.7rem;
+    }
+    .devision-line{
+        width: 60%;
+        height: 2px;
+        background-color: $primary;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    /// Editing my styling
+    // /Home Page 
+    .home-top-section{
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        grid-gap: 2%;
+    }
+    .home-mini-about-div{
+        margin: 0;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .adobe-expertise{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .other-expertise{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .home-bot-first,
+    .home-bot-second{
+        width: 80%;
+    }
+
+    // /About Page 
+    .about-me-section{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 0.1fr 0.1fr;
+        grid-gap: 2%;
+    }
+    .about-img-explination{
+        margin: 0;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .about-text{
+        margin: 0;
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .software-expertise{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;    
+        grid-column: 1/3;
+        grid-row: 3/4;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+    }
+    .software-expertise img{
+        margin: 0;
+        width: 12%;
+    }
+
+    .about-me{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 4fr;
+    }
+    .about-title{
+        display: block;
+        margin: 0;
+        margin-top: auto;
+        align-self: baseline;
+        position: relative;
+        bottom: -9.5%;
+        left: -0%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    // /Portfolio Page
+    .projets{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .move{
+        position: relative;
+        top: 4rem;
+    }
+    .project-section-a0,
+    .project-section-e0{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 4fr;
+    }
+    .project-section-e0{
+        margin: 0 auto;
+    }
+    .project-section-a0 h1,
+    .project-section-e0 h1{
+        display: block;
+        margin: 0;
+        margin-top: auto;
+        align-self: baseline;
+        position: relative;
+        bottom: -20%;
+        left: -0.3%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .second-project-sec h1{
+        left: -0.3%;
+    }
+    .third-project-sec h1{
+        bottom: -23%;
+        left: -0.3%;
+    }
+    .fourth-project-sec h1{
+        bottom: -22%;
+        left: -0.3%;
+    }
+    .fifth-project-sec h1{
+        bottom: -23%;
+        left: -0.3%;
+    }
+    .sixth-project-sec h1{
+        bottom: -22%;
+        left: -0.3%;
+    }
+    .seventh-project-sec h1{
+        bottom: -23%;
+        left: -0.3%;
+    }
+
+    // /Contact Page 
+    .contact-me{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contact-title{
+        display: block;
+        margin: 0;
+        margin-top: auto;
+        align-self: baseline;
+        position: relative;
+        bottom: -22%;
+        left: -0.3%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+@media screen and (max-width: 500px){
+    //*** Editting My deafault values to the viewport
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.7rem;
+    }
+    a{
+        font-size: 0.7rem;
+    }
+    p, li{
+        font-size: 0.7rem;
+    }
+    .devision-line{
+        width: 60%;
+        height: 2px;
+        background-color: $primary;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .edit-line{
+        margin-top: 3rem;
+    }
+
+    /// Editing my styling
+    // /Home Page 
+    .home-top-section{
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 0.5fr 0.5fr;
+        grid-gap: 2%;
+    }
+    .home-mini-about-div{
+        margin: 0;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .adobe-expertise{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .other-expertise{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .home-bot-first,
+    .home-bot-second{
+        width: 90%;
+    }
+
+    .footer-organizor{
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .footer-groups{
+        display: flex;
+        flex-direction: column;
+        z-index: 666;
+    }
+    .footer-organizor p{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .footer-organizor img{
+        grid-column: 1/6;
+        grid-row: 2/3;
+    }
+    .footer-organizor-first-group{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .footer-organizor-second-group{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .footer-organizor-third-group{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    // /About Page
+    .about-me{
+        width: 90%;
+    }
+    .software-expertise{
+        margin-bottom: 10%;
+    }
+
+    .about-me{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 4fr;
+    }
+    .about-title{
+        display: block;
+        margin: 0;
+        margin-top: auto;
+        align-self: baseline;
+        position: relative;
+        bottom: -9.5%;
+        left: -0%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    // /Portfolio Page 
+    .projets{
+        width: 90%;
+    }
+    .move{
+        position: relative;
+        top: 3rem;
+    }
+
+    .ject-sec-one, 
+    .ject-sec-two{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 2fr 1fr 1fr;
+        grid-gap: 2%;
+        padding-bottom: 12%;
+    }
+    .ject-one,
+    .ject-two{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .p1-i2,
+    .p2-i2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .p1-i3,
+    .p2-i3{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }   
+
+    .ject-sec-five{
+        display: grid;
+        grid-template-columns: 1fr 0.35fr;
+        grid-row: 2fr 1fr 0.5fr;
+        grid-gap: 2%;
+        padding-bottom: 11%;
+    }
+    .p5-i1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    }
+    .p5-i2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .p5-i3{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .p5-l{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .ject-sec-three, 
+    .ject-sec-four,
+    .ject-sec-six,
+    .ject-sec-seven{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 0.5fr;
+        grid-row: 2fr 0.5fr 0.2fr;
+        grid-gap: 2%;
+        padding-bottom: 11%;
+    }
+
+    .p3-i1,
+    .p4-i1,
+    .p6-i1,
+    .p7-i1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .p3-i2,
+    .p4-i2,
+    .p6-i2,
+    .p7-i2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .p3-i3,
+    .p4-i3,
+    .p6-i3,
+    .p7-i3{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .p3-i4,
+    .p4-i4,
+    .p6-i4,
+    .p7-i4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .p3-l,
+    .p4-l,
+    .p6-l,
+    .p7-l{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    
+    .project-section-a0,
+    .project-section-e0{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 4fr;
+    }
+    .project-section-e0{
+        margin: 0 auto;
+    }
+    .project-section-a0 h1,
+    .project-section-e0 h1{
+        display: block;
+        margin: 0;
+        margin-top: auto;
+        align-self: baseline;
+        position: relative;
+        bottom: 10%;
+        left: -0.3%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .project-section-e0{
+        margin-top: 1rem;
+    }
+    .second-project-sec h1{
+        left: -0.3%;
+    }
+    .third-project-sec h1{
+        bottom: 10%;
+        left: -0.3%;
+    }
+    .third-project-sec{
+        margin-top: 0;
+    }
+    .fourth-project-sec h1{
+        bottom: 10%;
+        left: -0.3%;
+    }
+    .fifth-project-sec h1{
+        bottom: 10%;
+        left: -0.3%;
+    }
+    .sixth-project-sec h1{
+        bottom: 10%;
+        left: -0.3%;
+    }
+    .seventh-project-sec h1{
+        bottom: 10%;
+        left: -0.3%;
+    }
+
+    // /Contact Page
+    .contact-me{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-title{
+        display: block;
+        margin: 0;
+        margin-top: auto;
+        align-self: baseline;
+        position: relative;
+        bottom: -9%;
+        left: -0.3%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .contact-grid{
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 2fr 1fr 0.5fr;
+        grid-gap: 2%;
+        padding-bottom: 11%;
+    }
+    .contact-grid img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .contact-one{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .social-media-presence-contact{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
